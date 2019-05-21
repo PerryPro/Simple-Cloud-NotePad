@@ -33,7 +33,15 @@
 <body class="head">
 <p>This is a <a href="index.html">NotePad </a>|&nbsp;Now you are modifying it(the content below will overwrite the file)</p>
 <form action="notepad_modify.php" form id="form1" name="form1" method="post">
-  <textarea name="textarea" class="txtfield" id="textarea" form="form1"></textarea>
+  <textarea name="textarea" class="txtfield" id="textarea" form="form1">
+  <?php
+	$mynote = fopen("note.txt", "r") or die("Unable to open file!");
+	while(!feof($mynote)) {
+	echo fgets($mynote) ;
+	}
+	fclose($mynote);
+	?>
+  </textarea>
 </form>
 <p class="button">
   <input name="submit" type="submit" id="submit" form="form1" value="Overwrite">
