@@ -2,11 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Perry的记事本</title>
+<title>Simple Cloud NotePad</title>
 <style type="text/css">
 .head {
 	font-size: 24px;
-	font-family: "微软雅黑", "宋体";
+	font-family: "Microsoft YaHei";
 }
 #form1 {
 	height: 400px;
@@ -14,12 +14,12 @@
 .txtfield {
 	height: 400px;
 	width: 100%;
-	font-family: "微软雅黑", "宋体";
+	font-family: "Microsoft YaHei";
 	font-size: 24px;
 }
 .button {
 	text-align: center;
-	font-family: "微软雅黑", "宋体";
+	font-family: "Microsoft YaHei";
 }
 .head p a {
 	text-decoration: none;
@@ -28,14 +28,14 @@
 </head>
 
 <body class="head">
-<p>Perry的个人<a href="index.html">记事本</a>修改处(以下内容会完全覆盖源文件)</p>
+<p>This is a <a href="index.html">NotePad </a>|&nbsp;Now you are modifying it(the content below will overwrite the file)</p>
 <form action="notepad_modify.php" form id="form1" name="form1" method="post">
   <textarea name="textarea" class="txtfield" id="textarea" form="form1"></textarea>
 </form>
 <p class="button">
-  <input name="submit" type="submit" id="submit" form="form1" value="提交">
+  <input name="submit" type="submit" id="submit" form="form1" value="Submit">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <input name="reset" type="reset" id="reset" form="form1" value="重置">
+  <input name="reset" type="reset" id="reset" form="form1" value="Reset">
 </p>
 </body>
 </html>
