@@ -6,6 +6,10 @@
 	font-size: 24px;
 	font-family: "Microsoft YaHei";
 }
+.content{
+	font-size: 20px;
+	font-family: "Microsoft YaHei";
+}
 #form1 {
 	height: 400px;
 }
@@ -32,6 +36,7 @@
 <body class="head">
 <p>This is a <a href="index.html">NotePad </a>|&nbsp;Now you are viewing notes.</p>
 </body>
+<div class="content">
 <?php
 $myfile = fopen("note.txt", "r") or die("Unable to open file!");
 while(!feof($myfile)) {
@@ -39,3 +44,4 @@ while(!feof($myfile)) {
 }
 fclose($myfile);
 ?>
+</div>
