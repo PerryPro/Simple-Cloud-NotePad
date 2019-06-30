@@ -15,7 +15,7 @@
 	height: 400px;
 	width: 100%;
 	font-family: "Microsoft YaHei";
-	font-size: 24px;
+	font-size: 20px;
 }
 .button {
 	text-align: center;
@@ -28,13 +28,20 @@
 	text-decoration: none;
 	color: #00F;
 }
+#FilePath {
+	float: none;
+}
 </style>
 </head>
 
 <body class="head">
-<p>This is a <a href="index.html">NotePad </a>|&nbsp;<a href="get_note.php">View Note</a> OR <a href="modify.html">Modify Note</a></p>
+<p>This is a <a href="index.html">NotePad </a>|&nbsp;<a href="get_note.php">View Note</a> OR <a href="modify.html">Modify Note</a>&nbsp;
+  <input type="text" name="FilePath" id="FilePath" form="form1">
+&nbsp;</p>
+
 <form action="notepad_action.php" form id="form1" name="form1" method="post">
-  <textarea name="textarea" class="txtfield" id="textarea" form="form1"></textarea>
+<label for="FilePath"></label>
+<textarea name="textarea" class="txtfield" id="textarea" form="form1"></textarea>
 </form>
 <p class="button">
   <input name="submit" type="submit" id="submit" form="form1" value="Add">
